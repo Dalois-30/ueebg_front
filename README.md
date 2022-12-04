@@ -1,6 +1,6 @@
-# Dalois - Angular 11 Saas & Software Landing Page Template
+# Dalois - Angular 14 ueebg frontend site
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14
 
 ## Development server
 
