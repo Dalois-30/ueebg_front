@@ -1,0 +1,21 @@
+::ng-deep .dark-modal .modal-content {
+  background-color: #000000;
+  color: white;
+  background: none;
+  border: none;
+  }
+  ::ng-deep .dark-modal .modal-header {
+  border : none
+  }
+  ::ng-deep .dark-modal .close {
+  color: white;
+  }
+/* 
+  #background { 
+    background: rgba(216, 11, 11, 0.7) url('../../../../assets/images/ueebg/ueebg5.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+   } */

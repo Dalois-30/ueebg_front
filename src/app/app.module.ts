@@ -45,9 +45,10 @@ import { FeatherModule } from 'angular-feather';
 import { allIcons } from 'angular-feather/icons';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { SwitcherComponent } from './shared/switcher/switcher.component';
+// import { SwitcherComponent } from './shared/switcher/switcher.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PageThankyouComponent } from './core/components/page-thankyou/page-thankyou.component';
+import { PageAboutusComponent } from './core/components/page-aboutus/page-aboutus.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -75,8 +76,9 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     PageContactDetailComponent,
     PageErrorComponent,
     WidgetComponent,
-    SwitcherComponent,
+    // SwitcherComponent,
     PageThankyouComponent,
+    PageAboutusComponent
   ],
   imports: [
     BrowserModule,
