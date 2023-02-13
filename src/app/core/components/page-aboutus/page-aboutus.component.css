@@ -10,12 +10,35 @@
   ::ng-deep .dark-modal .close {
   color: white;
   }
-/* 
+#read{
+  display: none;
+}
+
+#read2{
+  display: none;
+}
+
+#read3{
+  display: none;
+}
+#display{
+  display: block;
+}
+
+#lire{
+  font-weight: bold;
+  color: #fff;
+}
+#lirenone{
+  display: none;
+}
+  
+
   #background { 
-    background: rgba(216, 11, 11, 0.7) url('../../../../assets/images/ueebg/ueebg5.png');
+    background: rgba(7, 1, 94, 0.377) url('../../../../assets/images/ueebg/ueebg5.png');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
-   } */
+   }

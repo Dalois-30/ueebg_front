@@ -33,7 +33,6 @@ import { ComponentsComponent } from './core/components/components/components.com
 import { IndexComponent } from './core/components/index/index.component';
 import { IndexBlogComponent } from './core/components/index-blog/index-blog.component';
 import { IndexBusinessComponent } from './core/components/index-business/index-business.component';
-import { IndexItSolutionComponent } from './core/components/index-it-solution/index-it-solution.component';
 import { PageBlogDetailComponent } from './core/components/page-blog-detail/page-blog-detail.component';
 import { PageBlogListSidebarComponent } from './core/components/page-blog-list-sidebar/page-blog-list-sidebar.component';
 import { PageComingsoonComponent } from './core/components/page-comingsoon/page-comingsoon.component';
@@ -69,7 +68,6 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     IndexComponent,
     IndexBlogComponent,
     IndexBusinessComponent,
-    IndexItSolutionComponent,
     PageBlogDetailComponent,
     PageBlogListSidebarComponent,
     PageComingsoonComponent,

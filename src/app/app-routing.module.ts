@@ -8,7 +8,6 @@ import { ChangelogComponent } from './core/components/changelog/changelog.compon
 import { ComponentsComponent } from './core/components/components/components.component';
 import { IndexBlogComponent } from './core/components/index-blog/index-blog.component';
 import { IndexBusinessComponent } from './core/components/index-business/index-business.component';
-import { IndexItSolutionComponent } from './core/components/index-it-solution/index-it-solution.component';
 import { IndexComponent } from './core/components/index/index.component';
 import { MasterPageComponent } from './core/components/master-page/master-page.component';
 import { PageBlogDetailComponent } from './core/components/page-blog-detail/page-blog-detail.component';
@@ -34,7 +33,6 @@ const routes: Routes = [
       { path: 'index', component: IndexComponent },
       { path: 'index-blog', component: IndexBlogComponent },
       { path: 'index-business', component: IndexBusinessComponent },
-      { path: 'index-it-solution', component: IndexItSolutionComponent },
       { path: 'page-blog-detail', component: PageBlogDetailComponent },
       { path: 'page-blog-list-sidebar', component: PageBlogListSidebarComponent },
       { path: 'page-contact-detail', component: PageContactDetailComponent },

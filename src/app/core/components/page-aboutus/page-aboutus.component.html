@@ -1,11 +1,11 @@
-<!-- Hero Start -->
-<section class="bg-half bg-light d-table w-100" style="background-image:  url('assets/images/ueebg/ueebg5.png');"
+<!-- Hero Start  bg-light -->
+<section class="bg-half d-table w-100" style="background-image:  url('assets/images/ueebg/gal/gal100.png');"
   id="background">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-12 text-center">
         <div class="page-next-level">
-          <h4 class="title"> A propos de l'UEEBg centre de Douala </h4>
+          <h4 class="title text-muted"></h4>
           <div class="page-next">
             <nav aria-label="breadcrumb" class="d-inline-block">
               <ul class="breadcrumb bg-white rounded shadow mb-0">
@@ -39,11 +39,11 @@
 <!-- About Start -->
 <section class="section">
   <div class="container">
-    <h4 class="title mb-4 ">Présentation de l'UEEBg centre de Douala</h4>
+    <h4 class="title mb-4" style="text-align: center;">Présentation de l'UEEBg centre de Douala</h4>
     <div class="row align-items-center" style="padding-bottom: 5%;">
       <div class="col-lg-6 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
         <div class="position-relative">
-          <img src="assets/images/ueebg/ueebg5.png" class="rounded img-fluid mx-auto d-block" alt="">
+          <img src="assets/images/ueebg/gal/gal21.png" class="rounded img-fluid mx-auto d-block" alt="">
           <div class="play-icon">
             <a (click)="openWindowCustomClass(content)" href="javascript:void(0);" data-type="youtube"
               data-id="yba7hPeTSjk" class="play-btn">
@@ -67,14 +67,14 @@
 
       <div class="col-lg-6 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
         <div class="position-relative">
-          <h4 class="title mb-4">Notre histoire</h4>
+          <!-- <h4 class="title mb-4">Notre histoire</h4> -->
           <p class="text-muted" style="text-align: justify;"> Née à Nkongsamba en 1957, <span
               class="text-primary fw-bold">l’Union des Elèves et Etudiants Bangou (UEEBg)</span> est une
             association nationale qui tire son exemple des jeunesses Bangou en rassemblant les élèves et étudiants
             Bangou d’une localité mais là sans spécifier le village d’origine. Elle fait de ses principales priorités
             les
             études et la culture ; ce qui participe d’une manière ou d’une autre au développement du Groupement
-            Bangou. L’UEEBg est considérée auprès de la communauté comme étant le lien de communication entre
+            Bangou.<a href="javascript:void(0)"  (click)="showMore('read', 'lire')" id="lire">... Lire la suite</a><span id="read"> L’UEEBg est considérée auprès de la communauté comme étant le lien de communication entre
             la jeunesse et les parents Bangou. Une jeunesse dynamique qui se veut <span
               class="text-primary fw-bold">‘’Fer de lance du
               groupement !’’</span> ; Quoi de plus pour l’avenir du groupement tout entier ? Comme toute association,
@@ -88,49 +88,57 @@
             pour sa part siège à Bonamoussadi (Kotto - Foyer Bangou de Kotto) ; l’antenne 4 qui a pour siège
             Bonabéri (Forêt bar, Foyer Bangou de Bonabéri) ; le Foyer Bangou de Boko accueille l’antenne 5 ;
             et bientôt nous accueillerons le nouveau-né de la famille (l’antenne 6) qui aura pour siège Ndogpassi
-            (Face Station Total 2ème Danger – Foyer AREBAN). </p>
-          <!-- <p class="text-muted">L’UEEBg Centre de Douala est également dotée d’une administration très hiérarchisée avec
-              à sa tête l’Assemblée Générale, suivi du Bureau Primaire (Président Exécutif – 1er Vice-président
-              Responsable des Finances – 2e Vice-président Responsable de l’administration et de la culture–
-              Secrétaire Générale) ; ensuite vient le Bureau Secondaire (Secrétaire Général Adjoint – les deux
-              Censeurs – Des deux Commissaires aux Comptes – Et du Chargé Culturel et Sportif) ; ensuite nous
-              avons le Bureau Elargi et le Bureau des sous-centres qui sont mis en place suivant la politique du
-              bureau exécutif ; et enfin vient le Collège des Conseillers et le Bureau d’Honneur. Ceci dit, le bureau
-              exécutif actuel a pour nom de baptême ‘‘Le Bureau de la Détermination’’ en son Acte 3 est conduit par
-              le Président NJIKI Alex ; avec pour 1er Vice-président en charge des finances M. KAMGANG Gabin,
-              2ème Vice-président en charge de l’administration et la culture M. TAYO Steven, et pour Secrétaire
-              générale Mlle. NANA NGOULEU Latonia.</p>
-            
-            <p class="text-muted">Le quotidien de l’association est marqué par des réunions régulières dont celles dites ordinaires
-              se tiennent chaque Dimanche dans la matinée (à 11 heures précises) et les réunions extraordinaires se
-              tiennent pour l’essentiel tous les 1ers Dimanche du mois. Pour ce qui est du financement de ses activités,
-              l’UEEBg Centre de Douala bénéficie du soutien des Associations des parents, du soutien des personnes
-              ressources, des sponsorings, du revenu des activités, des cotisations de ses membres, et aussi des
-              activités génératrices de revenus qu’elle mène.</p> -->
-
-          <!-- <a href="javascript:void(0)" class="btn btn-primary mt-3">Contact us <i class="uil uil-angle-right-b"></i></a> -->
+            (Face Station Total 2ème Danger – Foyer AREBAN). <a href="javascript:void(0)"  (click)="showLess('read', 'lire')" >voir moins</a></span> </p>
+    
         </div>
       </div>
       <!--end col-->
     </div>
     <!--end row-->
+    <h4 class="title mb-4" style="text-align: center;">Constitution du bureau</h4>
     <div class="row align-items-center" style="padding-bottom: 5%;">
+
+       <!--end col-->
+       <div class="col-lg-6 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+        <div class="position-relative">
+          <img src="assets/images/ueebg/ueebg5.png" class="rounded img-fluid mx-auto d-block" alt="">
+          <div class="play-icon">
+            <a (click)="openWindowCustomClass(content)" href="javascript:void(0);" data-type="youtube"
+              data-id="yba7hPeTSjk" class="play-btn">
+              <i class="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
+            </a>
+            <ng-template #content let-modal>
+              <div class="modal-header">
+                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <iframe src="https://player.vimeo.com/video/99025203" height="450" width="780" frameborder="0"
+                  allowfullscreen allow="autoplay; encrypted-media"></iframe>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+      <!--end col-->
 
       <div class="col-lg-6 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
         <div class="position-relative">
-          <h4 class="title mb-4">Constitution du bureau</h4>
+          
           <p class="text-muted" style="text-align: justify;">L’UEEBg Centre de Douala est également dotée d’une
             administration très hiérarchisée avec
             à sa tête l’Assemblée Générale, suivi du Bureau Primaire (Président Exécutif – 1er Vice-président
             Responsable des Finances – 2e Vice-président Responsable de l’administration et de la culture–
             Secrétaire Générale) ; ensuite vient le Bureau Secondaire (Secrétaire Général Adjoint – les deux
-            Censeurs – Des deux Commissaires aux Comptes – Et du Chargé Culturel et Sportif) ; ensuite nous
+            Censeurs – Des deux Commissaires aux Comptes – Et du Chargé Culturel et Sportif); <a href="javascript:void(0)" (click)="showMore('read2', 'lire2')" id="lire2">... Lire la suite</a>
+            <span id="read2"> ensuite nous
             avons le Bureau Elargi et le Bureau des sous-centres qui sont mis en place suivant la politique du
-            bureau exécutif ; et enfin vient le Collège des Conseillers et le Bureau d’Honneur. Ceci dit, le bureau
+            bureau exécutif; et enfin vient le Collège des Conseillers et le Bureau d’Honneur. Ceci dit, le bureau
             exécutif actuel a pour nom de baptême ‘‘Le Bureau de la Détermination’’ en son Acte 3 est conduit par
             le Président NJIKI Alex ; avec pour 1er Vice-président en charge des finances M. KAMGANG Gabin,
             2ème Vice-président en charge de l’administration et la culture M. TAYO Steven, et pour Secrétaire
-            générale Mlle. NANA NGOULEU Latonia.</p>
+            générale Mlle. NANA NGOULEU Latonia.<a href="javascript:void(0)"  (click)="showLess('read2', 'lire2')" id="voir2">voir moins</a></span> </p>
 
           <!-- <p class="text-muted">Le quotidien de l’association est marqué par des réunions régulières dont celles dites ordinaires
                 se tiennent chaque Dimanche dans la matinée (à 11 heures précises) et les réunions extraordinaires se
@@ -142,36 +150,14 @@
           <!-- <a href="javascript:void(0)" class="btn btn-primary mt-3">Contact us <i class="uil uil-angle-right-b"></i></a> -->
         </div>
       </div>
-      <!--end col-->
-      <div class="col-lg-6 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
-        <div class="position-relative">
-          <img src="assets/images/ueebg/ueebg5.png" class="rounded img-fluid mx-auto d-block" alt="">
-          <div class="play-icon">
-            <a (click)="openWindowCustomClass(content)" href="javascript:void(0);" data-type="youtube"
-              data-id="yba7hPeTSjk" class="play-btn">
-              <i class="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
-            </a>
-            <ng-template #content let-modal>
-              <div class="modal-header">
-                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <iframe src="https://player.vimeo.com/video/99025203" height="450" width="780" frameborder="0"
-                  allowfullscreen allow="autoplay; encrypted-media"></iframe>
-              </div>
-            </ng-template>
-          </div>
-        </div>
-      </div>
-      <!--end col-->
+     
     </div>
     <!--end row-->
+    <h4 class="title mb-4" style="text-align: center;">Quotidien de l'UEEBG</h4>
     <div class="row align-items-center" style="padding-bottom: 5%;">
       <div class="col-lg-6 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
         <div class="position-relative">
-          <img src="assets/images/ueebg/ueebg5.png" class="rounded img-fluid mx-auto d-block" alt="">
+          <img src="assets/images/ueebg/gal/gal14.png" class="rounded img-fluid mx-auto d-block" alt="">
           <div class="play-icon">
             <a (click)="openWindowCustomClass(content)" href="javascript:void(0);" data-type="youtube"
               data-id="yba7hPeTSjk" class="play-btn">
@@ -195,14 +181,15 @@
 
       <div class="col-lg-6 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
         <div class="position-relative">
-          <h4 class="title mb-4">Quotidien de l'UEEBG</h4>
+          
           <p class="text-muted" style="text-align: justify;">Le quotidien de l’association est marqué par des réunions
             régulières dont celles dites ordinaires
             se tiennent chaque Dimanche dans la matinée (à 11 heures précises) et les réunions extraordinaires se
             tiennent pour l’essentiel tous les 1ers Dimanche du mois. Pour ce qui est du financement de ses activités,
-            l’UEEBg Centre de Douala bénéficie du soutien des Associations des parents, du soutien des personnes
+            l’UEEBg Centre de Douala bénéficie du soutien des<a href="javascript:void(0)"  (click)="showMore('read3', 'lire3')" id="lire3">... Lire la suite</a>
+            <span id="read3">Associations des parents, du soutien des personnes
             ressources, des sponsorings, du revenu des activités, des cotisations de ses membres, et aussi des
-            activités génératrices de revenus qu’elle mène.</p>
+            activités génératrices de revenus qu’elle mène. <a href="javascript:void(0)"  (click)="showLess('read3', 'lire3')" id="voir3">voir moins</a></span> </p>
 
           <!-- <a href="javascript:void(0)" class="btn btn-primary mt-3">Contact us <i class="uil uil-angle-right-b"></i></a> -->
         </div>
