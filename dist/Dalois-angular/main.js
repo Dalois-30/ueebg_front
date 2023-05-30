@@ -3405,7 +3405,7 @@ function IndexComponent_ng_template_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](15);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("strings", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction0"](4, _c4))("shuffle", true)("typeSpeed", 100)("loop", true);
 } }
-function IndexComponent_div_138_Template(rf, ctx) { if (rf & 1) {
+function IndexComponent_div_146_Template(rf, ctx) { if (rf & 1) {
     const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 71)(1, "div", 72)(2, "div", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](3, "img", 73)(4, "div", 20);
@@ -3416,7 +3416,7 @@ function IndexComponent_div_138_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](10);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](11, "div", 77)(12, "a", 78);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function IndexComponent_div_138_Template_a_click_12_listener() { const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r5); const i_r3 = restoredCtx.index; const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r4.open(i_r3)); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function IndexComponent_div_146_Template_a_click_12_listener() { const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r5); const i_r3 = restoredCtx.index; const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r4.open(i_r3)); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](13, "i-feather", 79);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()()();
 } if (rf & 2) {
@@ -3550,7 +3550,7 @@ class IndexComponent {
     }
 }
 IndexComponent.ɵfac = function IndexComponent_Factory(t) { return new (t || IndexComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ngx_lightbox__WEBPACK_IMPORTED_MODULE_0__.Lightbox)); };
-IndexComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: IndexComponent, selectors: [["app-index"]], decls: 161, vars: 5, consts: [["id", "home", 1, "bg-half-10", "d-table", "w-100"], [1, "slides", 3, "showNavigationArrows", "showNavigationIndicators"], ["ngbSlide", ""], [1, "py-4", "border-bottom", "border-top"], [1, "container"], [1, "section", "bg-light", "border-bottom"], [1, "row", "justify-content-center"], [1, "col-12", "text-center"], [1, "section-title", "mb-4", "pb-2"], [1, "title", "mb-4"], [1, "container", "mt-100", "mt-60"], [1, "row", "align-items-center"], [1, "col-lg-6", "col-md-6", "mt-4", "mt-lg-0", "pt-", "pt-lg-0"], [1, "ms-lg-4"], [1, "text-muted", "para-desc", "mb-0", "mx-auto"], [1, "text-primary", "fw-bold"], [1, "col-lg-6", "col-md-6"], [1, "card", "work-container", "work-modern", "overflow-hidden", "rounded", "border-0", "shadow-md"], [1, "card-body", "p-0"], ["src", "assets/images/ueebg/ndop.jpg", "alt", "work-image", 1, "img-fluid"], [1, "overlay-work", "bg-dark"], [1, "content"], ["href", "javascript:void(0)", 1, "title", "text-white", "d-block", "fw-bold"], [1, "text-light"], [1, "text-muted", "para-desc"], [1, "watch-video", "mt-4", "pt-2"], ["href", "#", "routerLink", "/about", 1, "btn", "btn-primary", "m-1", "me-2"], ["name", "chevron-right", 1, "fea", "icon-sm"], [1, "col-lg-6", "col-6", "mt-4", "mt-lg-0", "pt-2", "pt-lg-0"], [1, "col-lg-6", "col-6"], [1, "row"], [1, "col-lg-12", "col-md-12", "mt-4", "mt-lg-0", "pt-2", "pt-lg-0"], ["src", "assets/images/ueebg/tagidor.jpg", "alt", "work-image", 1, "img-fluid"], [1, "col-lg-12", "col-md-12", "mt-4", "pt-2"], ["src", "assets/images/ueebg/danse.png", "alt", "work-image", 1, "img-fluid"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-light"], ["viewBox", "0 0 2880 250", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M720 125L2160 0H2880V250H0V125H720Z", "fill", "currentColor"], [1, "section", "bg-light"], [1, "col-md-6", "col-12"], [1, "d-flex"], ["name", "help-circle", 1, "fea", "icon-ex-md", "text-primary", "me-2", "mt-1"], [1, "flex-1"], [1, "mt-0"], [1, "text-primary"], [1, "answer", "text-muted", "mb-0"], [1, "col-md-6", "col-12", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0"], [1, "col-md-6", "col-12", "mt-4", "pt-2"], [1, "row", "my-md-5", "pt-md-3", "my-4", "pt-2", "pb-lg-4", "justify-content-center"], [1, "col-12"], ["class", "col-lg-4 col-md-6 col-12 mt-4 pt-2", 4, "ngFor", "ngForOf"], [1, "col-12", "mt-4", "pt-2"], ["routerLink", "/portfolio-modern-three", 1, "btn", "btn-outline-primary"], [1, "mdi", "mdi-chevron-right"], [1, "shape", "overflow-hidden", "text-footer"], [1, "text-muted", "para-desc", "mb-0"], [3, "blogData"], ["href", "#", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"], [1, "bg-half-170", "rounded-md", 2, "background", "url('assets/images/ueebg/gal/gal21.png') center center"], [1, "bg-overlay", "rounded-md"], [1, "title-heading", "text-center"], [1, "text-white", "title-dark", "mb-3", "text-muted"], [1, "list-unstyled"], [1, "text-muted"], [2, "font-size", "larger", "font-weight", "bolder"], [1, "text-white", "title-dark", "mb-1"], [2, "font-weight", "bold", 3, "strings", "shuffle", "typeSpeed", "loop"], [1, "element", "typing", "text-primary"], [1, "mt-4"], [1, "col-lg-4", "col-md-6", "col-12", "mt-4", "pt-2"], [1, "card", "border-0", "work-container", "work-modern", "position-relative", "d-block", "overflow-hidden", "rounded"], ["alt", "work-image", 1, "img-fluid", 3, "src"], [1, "mb-0"], ["routerLink", "/page-work-detail", 1, "text-white", "title"], [1, "text-light", "tag", "mb-0"], [1, "icons", "text-center"], [1, "text-primary", "work-icon", "bg-white", "d-inline-block", "rounded-pill", "mfp-image", 3, "click"], ["name", "camera", 1, "fea", "icon-sm"]], template: function IndexComponent_Template(rf, ctx) { if (rf & 1) {
+IndexComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: IndexComponent, selectors: [["app-index"]], decls: 169, vars: 5, consts: [["id", "home", 1, "bg-half-10", "d-table", "w-100"], [1, "slides", 3, "showNavigationArrows", "showNavigationIndicators"], ["ngbSlide", ""], [1, "py-4", "border-bottom", "border-top"], [1, "container"], [1, "section", "bg-light", "border-bottom"], [1, "row", "justify-content-center"], [1, "col-12", "text-center"], [1, "section-title", "mb-4", "pb-2"], [1, "title", "mb-4"], [1, "container", "mt-100", "mt-60"], [1, "row", "align-items-center"], [1, "col-lg-6", "col-md-6", "mt-4", "mt-lg-0", "pt-", "pt-lg-0"], [1, "ms-lg-4"], [1, "text-muted", "para-desc", "mb-0", "mx-auto"], [1, "text-primary", "fw-bold"], [1, "col-lg-6", "col-md-6"], [1, "card", "work-container", "work-modern", "overflow-hidden", "rounded", "border-0", "shadow-md"], [1, "card-body", "p-0"], ["src", "assets/images/ueebg/ndop.jpg", "alt", "work-image", 1, "img-fluid"], [1, "overlay-work", "bg-dark"], [1, "content"], ["href", "javascript:void(0)", 1, "title", "text-white", "d-block", "fw-bold"], [1, "text-light"], [1, "text-muted", "para-desc"], [1, "watch-video", "mt-4", "pt-2"], ["href", "#", "routerLink", "/about", 1, "btn", "btn-primary", "m-1", "me-2"], ["name", "chevron-right", 1, "fea", "icon-sm"], [1, "col-lg-6", "col-6", "mt-4", "mt-lg-0", "pt-2", "pt-lg-0"], [1, "col-lg-6", "col-6"], [1, "row"], [1, "col-lg-12", "col-md-12", "mt-4", "mt-lg-0", "pt-2", "pt-lg-0"], ["src", "assets/images/ueebg/tagidor.jpg", "alt", "work-image", 1, "img-fluid"], [1, "col-lg-12", "col-md-12", "mt-4", "pt-2"], ["src", "assets/images/ueebg/danse.png", "alt", "work-image", 1, "img-fluid"], [1, "position-relative"], [1, "shape", "overflow-hidden", "text-light"], ["viewBox", "0 0 2880 250", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M720 125L2160 0H2880V250H0V125H720Z", "fill", "currentColor"], [1, "section", "bg-light"], [1, "col-md-6", "col-12"], [1, "d-flex"], ["name", "help-circle", 1, "fea", "icon-ex-md", "text-primary", "me-2", "mt-1"], [1, "flex-1"], [1, "mt-0"], [1, "text-primary"], [1, "answer", "text-muted", "mb-0"], [1, "col-md-6", "col-12", "mt-4", "mt-sm-0", "pt-2", "pt-sm-0"], [1, "col-md-6", "col-12", "mt-4", "pt-2"], [1, "row", "my-md-5", "pt-md-3", "my-4", "pt-2", "pb-lg-4", "justify-content-center"], [1, "col-12"], ["class", "col-lg-4 col-md-6 col-12 mt-4 pt-2", 4, "ngFor", "ngForOf"], [1, "col-12", "mt-4", "pt-2"], ["routerLink", "/portfolio-modern-three", 1, "btn", "btn-outline-primary"], [1, "mdi", "mdi-chevron-right"], [1, "shape", "overflow-hidden", "text-footer"], [1, "text-muted", "para-desc", "mb-0"], [3, "blogData"], ["href", "#", "id", "back-to-top", 1, "btn", "btn-icon", "btn-primary", "back-to-top", 3, "ngxScrollTo"], ["name", "arrow-up", 1, "icons"], [1, "bg-half-170", "rounded-md", 2, "background", "url('assets/images/ueebg/gal/gal21.png') center center"], [1, "bg-overlay", "rounded-md"], [1, "title-heading", "text-center"], [1, "text-white", "title-dark", "mb-3", "text-muted"], [1, "list-unstyled"], [1, "text-muted"], [2, "font-size", "larger", "font-weight", "bolder"], [1, "text-white", "title-dark", "mb-1"], [2, "font-weight", "bold", 3, "strings", "shuffle", "typeSpeed", "loop"], [1, "element", "typing", "text-primary"], [1, "mt-4"], [1, "col-lg-4", "col-md-6", "col-12", "mt-4", "pt-2"], [1, "card", "border-0", "work-container", "work-modern", "position-relative", "d-block", "overflow-hidden", "rounded"], ["alt", "work-image", 1, "img-fluid", 3, "src"], [1, "mb-0"], ["routerLink", "/page-work-detail", 1, "text-white", "title"], [1, "text-light", "tag", "mb-0"], [1, "icons", "text-center"], [1, "text-primary", "work-icon", "bg-white", "d-inline-block", "rounded-pill", "mfp-image", 3, "click"], ["name", "camera", 1, "fea", "icon-sm"]], template: function IndexComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "section", 0)(1, "ngb-carousel", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, IndexComponent_ng_template_2_Template, 18, 5, "ng-template", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
@@ -3634,7 +3634,7 @@ IndexComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__[
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](105, "div", 47)(106, "div", 41);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](107, "i-feather", 42);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](108, "div", 43)(109, "h5", 44);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](110, " Semaine de la femme");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](110, " Semaine de la fille et de la femme Bangou");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](111, "p", 46);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](112, "If the distribution of letters and 'words' is random, the reader will not be distracted from making a neutral judgement on the visual impact");
@@ -3642,7 +3642,7 @@ IndexComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__[
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](113, "div", 48)(114, "div", 41);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](115, "i-feather", 42);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](116, "div", 43)(117, "h5", 44);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](118, " Camp de vaccance");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](118, " Quinzaine culturelle");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](119, "p", 46);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](120, "Furthermore, it is advantageous when the dummy text is relatively realistic so that the layout impression of the final publication is not compromised.");
@@ -3650,46 +3650,54 @@ IndexComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_2__[
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](121, "div", 48)(122, "div", 41);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](123, "i-feather", 42);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](124, "div", 43)(125, "h5", 44);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](126, "Journ\u00E9e de l'excellence");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](126, " Camp de vaccance");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](127, "p", 46);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](128, "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](128, "Furthermore, it is advantageous when the dummy text is relatively realistic so that the layout impression of the final publication is not compromised.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](129, "div", 48)(130, "div", 41);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](131, "i-feather", 42);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](132, "div", 43)(133, "h5", 44);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](134, "Journ\u00E9e de l'excellence");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](135, "p", 46);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](136, "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin.");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](129, "div", 49);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](130, "div", 30)(131, "div", 50)(132, "div", 8)(133, "div", 7)(134, "div", 8)(135, "h4", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](136, "Aper\u00E7u de notre gallerie ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](137, "div", 49);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](138, "div", 30)(139, "div", 50)(140, "div", 8)(141, "div", 7)(142, "div", 8)(143, "h4", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](144, "Aper\u00E7u de notre gallerie ");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](137, "div", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](138, IndexComponent_div_138_Template, 14, 3, "div", 51);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](139, "div", 52)(140, "a", 53);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](141, "See More ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](142, "i", 54);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](145, "div", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](146, IndexComponent_div_146_Template, 14, 3, "div", 51);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](147, "div", 52)(148, "a", 53);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](149, "See More ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](150, "i", 54);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](143, "div", 35)(144, "div", 55);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](151, "div", 35)(152, "div", 55);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnamespaceSVG"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](145, "svg", 37);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](146, "path", 38);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](153, "svg", 37);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](154, "path", 38);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnamespaceHTML"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](147, "div", 4)(148, "div", 6)(149, "div", 50)(150, "div", 8)(151, "h4", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](152, "Derni\u00E8res nouvelles");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](155, "div", 4)(156, "div", 6)(157, "div", 50)(158, "div", 8)(159, "h4", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](160, "Derni\u00E8res nouvelles");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](153, "p", 56);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](154, "Start working with ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](155, "span", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](156, "Dalois");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](161, "p", 56);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](162, "Start working with ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](163, "span", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](164, "Dalois");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](157, " that can provide everything you need to generate awareness, drive traffic, connect.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](165, " that can provide everything you need to generate awareness, drive traffic, connect.");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](158, "app-blog", 57);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](166, "app-blog", 57);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](159, "a", 58);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](160, "i-feather", 59);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](167, "a", 58);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](168, "i-feather", 59);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("showNavigationArrows", ctx.showNavigationArrows)("showNavigationIndicators", ctx.showNavigationIndicators);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](137);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](145);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.workList);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](20);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("blogData", ctx.blogData);
