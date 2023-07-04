@@ -140,4 +140,16 @@ export class IndexComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showMore(id1: string, id2: string) {
+
+    document.getElementById(id2).style.display = 'none';
+    document.getElementById(id1).style.display = 'block';
+
+  }
+  showLess(id1: string, id2: string) {
+    
+    document.getElementById(id1).style.display = 'none';
+    document.getElementById(id2).style.display = 'flex';
+  }
+
 }
