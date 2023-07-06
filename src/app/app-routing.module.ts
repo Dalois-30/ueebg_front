@@ -18,8 +18,6 @@ import { PageErrorComponent } from './core/components/page-error/page-error.comp
 import { PageThankyouComponent } from './core/components/page-thankyou/page-thankyou.component';
 import { PageMaintenanceComponent } from './core/components/page-maintenance/page-maintenance.component';
 import { WidgetComponent } from './core/components/widget/widget.component';
-// import { SwitcherComponent } from './shared/switcher/switcher.component';
-import { combineLatest } from 'rxjs/internal/operators';
 import { PageAboutusComponent } from './core/components/page-aboutus/page-aboutus.component';
 
 const routes: Routes = [
