@@ -1,0 +1,244 @@
+<!-- Hero Start -->
+<section class="bg-half bg-light d-table w-100" id="home">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center">
+        <div class="page-next-level">
+          <h2> {{post.post.title | titlecase}} </h2>
+          <ul class="list-unstyled mt-4">
+            <li class="list-inline-item h6 user text-muted me-2"><i class="mdi mdi-account"></i>{{post.post.user.username}}</li>
+            <li class="list-inline-item h6 date text-muted"><i class="mdi mdi-calendar-check"></i>{{post.post.created_at | date:'medium'}}</li>
+          
+          </ul>
+          <div class="page-next">
+            <nav aria-label="breadcrumb" class="d-inline-block">
+              <ul class="breadcrumb bg-white rounded shadow mb-0">
+                <li class="breadcrumb-item"><a routerLink="/index">ueebg</a></li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Page</a></li>
+                <li class="breadcrumb-item"><a href="javascript:void(0)">Blog</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blog Detail</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!--end col-->
+    </div>
+    <!--end row-->
+  </div>
+  <!--end container-->
+</section>
+<!--end section-->
+<!-- Hero End -->
+
+<!-- Shape Start -->
+<div class="position-relative">
+  <div class="shape overflow-hidden text-white">
+    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+    </svg>
+  </div>
+</div>
+<!--Shape End-->
+
+<!-- Blog STart -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <!-- BLog Start -->
+      <div class="col-lg-8 col-md-6">
+        <div class="card blog blog-detail border-0 shadow rounded">
+          <img src={{post.image}} class="img-fluid rounded-top" alt="">
+          <div class="card-body content">
+            <h6><i class="mdi mdi-tag text-primary me-1"></i><a href="javscript:void(0)"
+                class="text-primary">{{post.post.category.name | titlecase}}</a></h6>
+            <p class="text-muted mt-3" [innerHTML]="post.post.content"></p>
+            <div class="post-meta mt-3">
+              <ul class="list-unstyled mb-0">
+                <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i
+                  class="uil uil-comment me-1"></i>{{post.post.comments.length}}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow rounded border-0 mt-4">
+          <div class="card-body">
+            <h5 class="card-title mb-0">Commentaires :</h5>
+
+            <ul class="media-list list-unstyled mb-0">
+              <li class="mt-4" *ngFor="let comment of comments">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <a class="pe-3" href="#">
+                      <!-- <img src="assets/images/client/01.jpg" class="img-fluid avatar avatar-md-sm rounded-circle shadow"
+                        alt="img"> -->
+                    </a>
+                    <div class="commentor-detail d-flex justify-content-between align-items-center">
+                      <h6 class="mb-1 me-3"><a href="javascript:void(0)" class="text-dark media-heading">{{comment.user.username}}</a></h6>
+                      <small class="text-muted">{{comment.created_at | date:'medium'}}</small>
+                    </div>                   
+                  </div>
+                  <a [ngxScrollTo]="'#home'" class="text-muted"><i class="mdi mdi-reply"></i> Répondre</a>
+                </div>
+                <div class="mt-0">
+                  <p class="text-muted fst-italic p-3 bg-light rounded" [innerHTML]="comment.content"></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card shadow rounded border-0 mt-4">
+          <div class="card-body">
+            <h5 class="card-title mb-0">Laisser un commentaire :</h5>
+
+            <form class="mt-3">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <label class="form-label">Votre commentaire</label>
+                    <div class="form-icon position-relative">
+                      <i-feather name="message-circle" class="fea icon-sm icons"></i-feather>
+                      <textarea [formControl]="content" id="message" placeholder="Votre commentaire" rows="5" name="message"
+                        class="form-control ps-5" required=""></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-6">
+                  <!-- <div class="mb-3">
+                    <label class="form-label">Name <span class="text-danger">*</span></label>
+                    <div class="form-icon position-relative">
+                      <i-feather name="user" class="fea icon-sm icons"></i-feather>
+                      <input id="name" name="name" type="text" placeholder="Name" class="form-control ps-5" required="">
+                    </div>
+                  </div> -->
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <!-- <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                    <div class="form-icon position-relative">
+                      <i-feather name="mail" class="fea icon-sm icons"></i-feather>
+                      <input id="email" type="email" placeholder="Email" name="email" class="form-control ps-5"
+                        required="">
+                    </div> -->
+                  </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-md-12">
+                  <div class="send d-grid">
+                    <button type="submit" (click)="addComment()" class="btn btn-primary">Valider
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="spinner2" style="visibility: hidden"></span>
+                    </button>
+                  </div>
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </form>
+            <!--end form-->
+          </div>
+        </div>
+
+        <div class="card shadow rounded border-0 mt-4">
+          <div class="card-body">
+            <h5 class="card-title mb-0">Articles semblables :</h5>
+
+            <div class="row">
+              <div class="col-lg-6 mt-4 pt-2" *ngFor="let post of blogListData; let i = index" [routerLink]="['/blog/'+post.post.id]">
+                <div class="card blog rounded border-0 shadow" *ngIf="i<2">
+                  <div class="position-relative">
+                    <img src={{post.image}} class="card-img-top rounded-top" alt="...">
+                    <div class="overlay rounded-top bg-dark"></div>
+                  </div>
+                  <div class="card-body content">
+                    <h5><a href="javascript:void(0)" class="card-title title text-dark">{{post.post.title | titlecase}}</a></h5>
+                    <div class="post-meta d-flex justify-content-between mt-3">
+                      <ul class="list-unstyled mb-0">
+                        <!-- <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i
+                              class="uil uil-heart me-1"></i>33</a></li> -->
+                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i
+                              class="uil uil-comment me-1"></i>{{post.post.comments.length}}</a></li>
+                      </ul>
+                      <a [routerLink]="['/blog/'+post.post.id]" class="text-muted readmore">Lire plus <i
+                          class="uil uil-angle-right-b align-middle"></i></a>
+                    </div>
+                  </div>
+                  <div class="author">
+                    <small class="text-light user d-block"><i class="uil uil-user"></i> {{post.post.user.username}}</small>
+                    <small class="text-light date"><i class="uil uil-calendar-alt"></i> {{post.post.created_at | date}}</small>
+                  </div>
+                </div>
+              </div>
+              <!--end col-->
+            </div>
+            <!--end row-->
+          </div>
+        </div>
+      </div>
+      <!-- BLog End -->
+
+      <!-- START SIDEBAR -->
+      <div class="col-lg-4 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+        <div class="card border-0 sidebar sticky-bar rounded shadow">
+          <div class="card-body">
+            <!-- SEARCH -->
+            <div class="widget">
+              <form role="search" method="get">
+                <div class="input-group mb-3 border rounded">
+                  <input type="text" id="s" name="s" class="form-control border-0" placeholder="Categorie...">
+                  <button type="submit" class="input-group-text bg-transparent border-0" id="searchsubmit"><i
+                      class="uil uil-search"></i></button>
+                </div>
+              </form>
+            </div>
+            <!-- SEARCH -->
+
+            <!-- Categories -->
+            <div class="widget mb-4 pb-2">
+              <h5 class="widget-title">Categories</h5>
+              <ul class="list-unstyled mt-4 mb-0 blog-categories">
+                <li *ngFor="let data of categoryListData"><a href="jvascript:void(0)">{{data.cat.name | titlecase}}</a> <span
+                    class="float-end">{{data.cat.posts.length}}</span></li>
+              </ul>
+            </div>
+            <!-- Categories -->
+
+            <!-- RECENT POST -->
+            <div class="widget mb-4 pb-2">
+              <h5 class="widget-title">Articles récents</h5>
+              <div class="mt-4">
+                <div class="clearfix post-recent" *ngFor="let post of blogListData; let i = index" [routerLink]="['/blog/'+post.post.id]">
+                  <div *ngIf="i<3">
+                    <div class="post-recent-thumb float-start"> <a [routerLink]="['/blog/'+post.post.id]"> <img alt="img"
+                          src={{post.image}} class="img-fluid rounded"></a></div>
+                    <div class="post-recent-content float-start"><a [routerLink]="['/blog/'+post.post.id]">{{post.post.title | titlecase}}</a><span
+                        class="text-muted mt-2">{{post.post.created_at | date}}</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--end col-->
+      <!-- END SIDEBAR -->
+    </div>
+    <!--end row-->
+  </div>
+  <!--end container-->
+</section>
+<!--end section-->
+<!-- Blog End -->
+
+<!-- Back to top -->
+<a href="javascript: void(0);" class="btn btn-icon btn-primary back-to-top" id="back-to-top" [ngxScrollTo]="'#home'">
+  <i-feather name="arrow-up" class="icons"></i-feather>
+</a>
+<!-- Back to top -->

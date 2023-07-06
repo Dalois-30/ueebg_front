@@ -11,8 +11,8 @@ import { Component, OnInit, Input } from '@angular/core';
  */
 export class FooterComponent implements OnInit {
 
-  @Input() footerVariant: string;
-  @Input() hideFooter: boolean;
+  @Input() footerVariant!: string;
+  @Input() hideFooter!: boolean;
 
   //Get Year
   year = new Date().getFullYear()

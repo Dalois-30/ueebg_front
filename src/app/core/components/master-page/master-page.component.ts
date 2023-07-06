@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 
 export class MasterPageComponent implements OnInit {
 
-  addclass: string;
-  buttonShow: boolean;
-  TopbarShow: boolean;
-  footerClass: string;
-  developerPage: boolean;
-  hideFooter: boolean;
-  shopPages: boolean;
+  addclass!: string;
+  buttonShow!: boolean;
+  TopbarShow!: boolean;
+  footerClass!: string;
+  developerPage!: boolean;
+  hideFooter!: boolean;
+  shopPages!: boolean;
 
   constructor() { }
 

@@ -13,11 +13,11 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
  */
 export class HeaderComponent implements OnInit {
 
-  @Input() navClass: string;
-  @Input() buttonList: boolean;
-  @Input() sliderTopbar: boolean;
-  @Input() isdeveloper: boolean;
-  @Input() shopPages: boolean;
+  @Input() navClass!: string;
+  @Input() buttonList!: boolean;
+  @Input() sliderTopbar!: boolean;
+  @Input() isdeveloper!: boolean;
+  @Input() shopPages!: boolean;
 
 
   constructor(private router: Router, private modalService: NgbModal) {
@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
       }
     });
   }
-
+  // document: any
   isCondensed = false;
 
   ngAfterViewInit() {
@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
     /**
      * Menu activation reset
      */
-    const resetParent = (el) => {
+    const resetParent = (el: any) => {
       el.classList.remove("active");
       const parent = el.parentElement;
 
@@ -67,7 +67,8 @@ export class HeaderComponent implements OnInit {
         }
       }
     };
-    let links = document.getElementsByClassName("nav-link-ref");
+
+    let links: any = document.getElementsByClassName("nav-link-ref");
     let matchingMenuItem = null;
     // tslint:disable-next-line: prefer-for-of
     for (let i = 0; i < links.length; i++) {
