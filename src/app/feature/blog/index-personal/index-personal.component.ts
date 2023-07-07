@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Lightbox } from 'ngx-lightbox';
+import { BlogService } from '../blog.service';
 
 @Component({
   selector: 'app-index-personal',
@@ -13,7 +14,13 @@ import { Lightbox } from 'ngx-lightbox';
  */
 export class IndexPersonalComponent implements OnInit {  private _album = [];
 
-  constructor(private _lightbox: Lightbox) {
+  postCount: number;
+  blogListData: any;
+
+  constructor(
+    private _lightbox: Lightbox,
+    private _blogService: BlogService
+    ) {
     for (let i = 1; i <= 6; i++) {
       const src = '../../../assets/images/personal/' + i + '.jpg';
       const caption = 'Image ' + i + ' caption here';
@@ -138,13 +145,19 @@ export class IndexPersonalComponent implements OnInit {  private _album = [];
   }
 
   showMore(id1: string, id2: string) {
-
     document.getElementById(id2).style.display = 'none';
     document.getElementById(id1).style.display = 'block';
-
   }
-  showLess(id1: string, id2: string) {
-    
+  showLess(id1: string, id2: string) {  
     document.getElementById(id1).style.display = 'none';
     document.getElementById(id2).style.display = 'flex';
-  }}
+  }
+
+  init() {
+    this._blogService.getAllPosts(0).subscribe((posts) => {
+      this.blogListData = posts.data;
+      this.postCount = posts.totalItems;
+    });
+    console.log("blogListData", this.blogListData);
+  }
+}
