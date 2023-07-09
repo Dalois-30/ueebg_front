@@ -92,4 +92,11 @@ export class PageBlogDetailComponent implements OnInit {
       },
     })
   }
+
+  async moveToPost(id: string){
+    this.post = await lastValueFrom(this._blogService.getOnePost(id))
+    console.log("post", this.post);
+    this.comments = await lastValueFrom(this._blogService.getPostComment(id))
+    console.log("comment", this.comments);
+  }
 }

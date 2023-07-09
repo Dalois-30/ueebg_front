@@ -26,6 +26,11 @@ export class BlogService {
       shareReplay(1)
     )
   }
+  getFirstsPosts(page: number, limit: number){
+    return this._http.get<any>(`${this._apiUrl}/posts?page=${page}&limit=${limit}`).pipe(
+      shareReplay(1)
+    )
+  }
 
   getOnePost(uuid: string){
     return this._http.get<any>(`${this._apiUrl}/posts/getOne/${uuid}`).pipe(
@@ -44,6 +49,12 @@ export class BlogService {
   addComment(addComment: AddCommentDto){
     return this._http.post<any>(`${this._apiUrl}/comments/add-comment`, addComment).pipe(
       shareReplay(1)
+    )
+  }
+
+  getImages(prefix: string){
+    return this._http.post<string[]>(`${this._apiUrl}/upload/get-file-list`, {"prefix": prefix}).pipe(
+      shareReplay(1),
     )
   }
 }

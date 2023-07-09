@@ -44,7 +44,7 @@
             <div class="card blog rounded border-0 shadow overflow-hidden">
               <div class="row align-items-center g-0">
                 <div class="col-md-6">
-                  <img src="{{data.image}}" class="img-fluid" alt="">
+                  <img src="{{data.image}}" height="300" width="300" class="img-fluid" alt="">
                   <div class="overlay bg-dark"></div>
                   <div class="author">
                     <small class="text-light user d-block"><i class="uil uil-user"></i> {{data.post.user.username}}</small>
@@ -56,7 +56,7 @@
                 <div class="col-md-6">
                   <div class="card-body content">
                     <h5><a href="javascript:void(0)" class="card-title title text-dark">{{data.post.title | titlecase}}</a></h5>
-                    <p class="text-muted mb-0">{{data.post.content}}</p>
+                    <p class="text-muted mt-3" [innerHTML]="data.post.content.slice(0, 20) + '...'"></p>
                     <div class="post-meta d-flex justify-content-between mt-3">
                       <ul class="list-unstyled mb-0">
                         <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i
@@ -102,9 +102,9 @@
             <div class="widget">
               <form role="search" method="get">
                 <div class="input-group mb-3 border rounded">
-                  <input type="text" id="s" name="s" class="form-control border-0" placeholder="Search Keywords...">
-                  <button type="submit" class="input-group-text bg-transparent border-0" id="searchsubmit"><i
-                      class="uil uil-search"></i></button>
+                  <input type="text" id="s" name="s" class="form-control border-0" placeholder="Categorie...">
+                  <button type="submit" class="input-group-text bg-transparent border-0" id="searchsubmit"> <i
+                      class="uil uil-search"></i></button> 
                 </div>
               </form>
             </div>
@@ -122,67 +122,19 @@
 
             <!-- RECENT POST -->
             <div class="widget mb-4 pb-2">
-              <h5 class="widget-title">Recent Post</h5>
+              <h5 class="widget-title">Articles récents</h5>
               <div class="mt-4">
-                <div class="clearfix post-recent" *ngFor="let post of blogListData; let i = index" [routerLink]=[post.post.id]>
+                <div class="clearfix post-recent" *ngFor="let post of blogListData; let i = index">
                   <div *ngIf="i<3">
-                    <div class="post-recent-thumb float-start"> <a [routerLink]=[post.post.id]> <img alt="img"
+                    <div class="post-recent-thumb float-start"> <a [routerLink]="['/blog/'+post.post.id]"> <img alt="img"
                           src={{post.image}} class="img-fluid rounded"></a></div>
-                    <div class="post-recent-content float-start"><a [routerLink]=[post.post.id]>{{post.post.title | titlecase}}</a><span
+                    <div class="post-recent-content float-start"><a [routerLink]="['/blog/'+post.post.id]">{{post.post.title | titlecase}}</a><span
                         class="text-muted mt-2">{{post.post.created_at | date}}</span></div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- RECENT POST -->
 
-            <!-- TAG CLOUDS -->
-            <!-- <div class="widget mb-4 pb-2">
-              <h5 class="widget-title">Tags Cloud</h5>
-              <div class="tagcloud mt-4">
-                <a href="jvascript:void(0)" class="rounded">Business</a>
-                <a href="jvascript:void(0)" class="rounded">Finance</a>
-                <a href="jvascript:void(0)" class="rounded">Marketing</a>
-                <a href="jvascript:void(0)" class="rounded">Fashion</a>
-                <a href="jvascript:void(0)" class="rounded">Bride</a>
-                <a href="jvascript:void(0)" class="rounded">Lifestyle</a>
-                <a href="jvascript:void(0)" class="rounded">Travel</a>
-                <a href="jvascript:void(0)" class="rounded">Beauty</a>
-                <a href="jvascript:void(0)" class="rounded">Video</a>
-                <a href="jvascript:void(0)" class="rounded">Audio</a>
-              </div>
-            </div> -->
-            <!-- TAG CLOUDS -->
-
-            <!-- SOCIAL -->
-            <div class="widget">
-              <h5 class="widget-title">Follow us</h5>
-              <ul class="list-unstyled social-icon mb-0 mt-4">
-                <li class="list-inline-item"><a href="javascript:void(0)" class="rounded">
-                    <i-feather name="facebook" class="fea icon-sm fea-social"></i-feather>
-                  </a></li>
-                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
-                    <i-feather name="instagram" class="fea icon-sm fea-social"></i-feather>
-                  </a></li>
-                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
-                    <i-feather name="twitter" class="fea icon-sm fea-social"></i-feather>
-                  </a></li>
-                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
-                    <i-feather name="linkedin" class="fea icon-sm fea-social"></i-feather>
-                  </a></li>
-                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
-                    <i-feather name="github" class="fea icon-sm fea-social"></i-feather>
-                  </a></li>
-                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
-                    <i-feather name="youtube" class="fea icon-sm fea-social"></i-feather>
-                  </a></li>
-                <li class="list-inline-item ms-1"><a href="javascript:void(0)" class="rounded">
-                    <i-feather name="gitlab" class="fea icon-sm fea-social"></i-feather>
-                  </a></li>
-              </ul>
-              <!--end icon-->
-            </div>
-            <!-- SOCIAL -->
           </div>
         </div>
       </div>

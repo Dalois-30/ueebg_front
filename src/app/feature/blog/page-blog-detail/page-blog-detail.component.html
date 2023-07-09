@@ -150,7 +150,7 @@
             <h5 class="card-title mb-0">Articles semblables :</h5>
 
             <div class="row">
-              <div class="col-lg-6 mt-4 pt-2" *ngFor="let post of blogListData; let i = index" [routerLink]="['/blog/'+post.post.id]">
+              <div class="col-lg-6 mt-4 pt-2" *ngFor="let post of blogListData; let i = index" [ngxScrollTo]="'#home'" [routerLink]="['/blog/'+post.post.id]" (click)="moveToPost(post.post.id)">
                 <div class="card blog rounded border-0 shadow" *ngIf="i<2">
                   <div class="position-relative">
                     <img src={{post.image}} class="card-img-top rounded-top" alt="...">
@@ -165,7 +165,7 @@
                         <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i
                               class="uil uil-comment me-1"></i>{{post.post.comments.length}}</a></li>
                       </ul>
-                      <a [routerLink]="['/blog/'+post.post.id]" class="text-muted readmore">Lire plus <i
+                      <a [routerLink]="['/blog/'+post.post.id]" (click)="moveToPost(post.post.id)" class="text-muted readmore">Lire plus <i
                           class="uil uil-angle-right-b align-middle"></i></a>
                     </div>
                   </div>
@@ -213,11 +213,11 @@
             <div class="widget mb-4 pb-2">
               <h5 class="widget-title">Articles récents</h5>
               <div class="mt-4">
-                <div class="clearfix post-recent" *ngFor="let post of blogListData; let i = index" [routerLink]="['/blog/'+post.post.id]">
+                <div class="clearfix post-recent" *ngFor="let post of blogListData; let i = index">
                   <div *ngIf="i<3">
-                    <div class="post-recent-thumb float-start"> <a [routerLink]="['/blog/'+post.post.id]"> <img alt="img"
+                    <div class="post-recent-thumb float-start"> <a  [ngxScrollTo]="'#home'" [routerLink]="['/blog/'+post.post.id]" (click)="moveToPost(post.post.id)"> <img alt="img"
                           src={{post.image}} class="img-fluid rounded"></a></div>
-                    <div class="post-recent-content float-start"><a [routerLink]="['/blog/'+post.post.id]">{{post.post.title | titlecase}}</a><span
+                    <div class="post-recent-content float-start"><a [ngxScrollTo]="'#home'" [routerLink]="['/blog/'+post.post.id]" (click)="moveToPost(post.post.id)">{{post.post.title | titlecase}}</a><span
                         class="text-muted mt-2">{{post.post.created_at | date}}</span></div>
                   </div>
                 </div>

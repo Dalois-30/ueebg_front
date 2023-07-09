@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Lightbox } from 'ngx-lightbox';
 import { BlogService } from '../blog.service';
+import { lastValueFrom } from 'rxjs';
 
 @Component({
   selector: 'app-index-personal',
@@ -12,8 +13,9 @@ import { BlogService } from '../blog.service';
 /***
  * Personal Component
  */
-export class IndexPersonalComponent implements OnInit {  private _album = [];
-
+export class IndexPersonalComponent implements OnInit {  
+  private _album = [];
+  images: string[] = [];
   postCount: number;
   blogListData: any;
 
@@ -21,82 +23,7 @@ export class IndexPersonalComponent implements OnInit {  private _album = [];
     private _lightbox: Lightbox,
     private _blogService: BlogService
     ) {
-    for (let i = 1; i <= 6; i++) {
-      const src = '../../../assets/images/personal/' + i + '.jpg';
-      const caption = 'Image ' + i + ' caption here';
-      const thumb = '../../../assets/images/personal/' + i + '-thumb.jpg';
-      const album = {
-         src: src,
-         caption: caption,
-         thumb: thumb
-      };
-
-      this._album.push(album);
-    }
   }
-
-  workList = [
-    {
-      image: 'assets/images/personal/1.jpg',
-      title: 'Iphone mockup',
-      category: 'Branding'
-    },
-    {
-      image: 'assets/images/personal/2.jpg',
-      title: 'Mockup Collection',
-      category: 'Mockup'
-    },
-    {
-      image: 'assets/images/personal/3.jpg',
-      title: 'Abstract images',
-      category: 'Abstract'
-    },
-    {
-      image: 'assets/images/personal/4.jpg',
-      title: 'Yellow bg with Books',
-      category: 'Books'
-    },
-    {
-      image: 'assets/images/personal/5.jpg',
-      title: 'Company V-card',
-      category: 'V-card'
-    },
-    {
-      image: 'assets/images/personal/6.jpg',
-      title: 'Mockup box with paints',
-      category: 'Photography'
-    }
-  ];
-
-    /**
-   * Blog Data
-   */
-    blogData = [
-      {
-        image: "assets/images/personal/1.jpg",
-        title: "Design your apps in your own way",
-        like: "33",
-        message: "08",
-        name: "Calvin Carlo",
-        date: "13th August, 2019"
-      },
-      {
-        image: "assets/images/personal/2.jpg",
-        title: "How apps is changing the IT world",
-        like: "33",
-        message: "08",
-        name: "Calvin Carlo",
-        date: "13th August, 2019"
-      },
-      {
-        image: "assets/images/personal/3.jpg",
-        title: "Smartest Applications for Business",
-        like: "33",
-        message: "08",
-        name: "Calvin Carlo",
-        date: "13th August, 2019"
-      }
-    ];
 
   open(index: number): void {
     // open lightbox
@@ -111,37 +38,8 @@ export class IndexPersonalComponent implements OnInit {  private _album = [];
   showNavigationArrows = true;
   showNavigationIndicators = false;
 
-  navClass = 'bg-white';
-  /**
-   * Partners slider
-   */
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: true,
-    touchDrag: false,
-    pullDrag: false,
-    autoplay: true,
-    navSpeed: 700,
-    navText: ['', ''],
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      940: {
-        items: 3
-      }
-    },
-    nav: false
-  };
-
-
   ngOnInit(): void {
+    this.init()
   }
 
   showMore(id1: string, id2: string) {
@@ -153,11 +51,26 @@ export class IndexPersonalComponent implements OnInit {  private _album = [];
     document.getElementById(id2).style.display = 'flex';
   }
 
-  init() {
-    this._blogService.getAllPosts(0).subscribe((posts) => {
+  async init() {
+    this._blogService.getFirstsPosts(0, 3).subscribe((posts) => {
       this.blogListData = posts.data;
       this.postCount = posts.totalItems;
     });
-    console.log("blogListData", this.blogListData);
+    this.images = await lastValueFrom(this._blogService.getImages("ueebg"));
+    console.log("images", this.images);
+
+    for (let i = 0; i <= 5; i++) {
+
+      const src = this.images[i];
+      const caption = 'Image ' + i + ' caption here';
+      const thumb = this.images[i] + '-thumb.jpg';
+      const album = {
+         src: src,
+         caption: caption,
+         thumb: thumb
+      };
+
+      this._album.push(album);
+    }
   }
 }
