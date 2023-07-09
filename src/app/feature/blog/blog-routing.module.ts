@@ -6,6 +6,7 @@ import { PageContactDetailComponent } from 'src/app/feature/blog/page-contact-de
 import { SwitcherComponent } from 'src/app/shared/switcher/switcher.component';
 import { IndexPersonalComponent } from './index-personal/index-personal.component';
 import { PageAboutusComponent } from './page-aboutus/page-aboutus.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [
   { path: '', component: IndexPersonalComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'blog/:id', component: PageBlogDetailComponent },
   { path: 'page-contact-detail', component: PageContactDetailComponent },
   { path: 'about', component: PageAboutusComponent },
+  { path: 'gallerie', component: GalleryComponent },
   { path: '#', component: SwitcherComponent },
 ];
 

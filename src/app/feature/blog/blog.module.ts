@@ -9,6 +9,7 @@ import { SwitcherComponent } from 'src/app/shared/switcher/switcher.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { IndexPersonalComponent } from './index-personal/index-personal.component';
 import { PageAboutusComponent } from './page-aboutus/page-aboutus.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [      
@@ -18,6 +19,7 @@ import { PageAboutusComponent } from './page-aboutus/page-aboutus.component';
     PageContactDetailComponent,
     PageAboutusComponent,
     SwitcherComponent,
+    GalleryComponent,
   ],
   imports: [
     CommonModule,
