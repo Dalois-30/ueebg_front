@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  // apiUrl: 'https://www.backend-ueebg.dal-tek.live',
-  apiUrl: 'http://localhost:3000',
+  apiUrl: 'https://www.backend-ueebg.dal-tek.live',
+  // apiUrl: 'http://localhost:3000',
 };
 
 /*
